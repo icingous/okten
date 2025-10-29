@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+p {
+    width: fit-content;
+    margin: auto;
+    height: 100%;
+    align-content: center;
+    background-color: whitesmoke;
+}
+
+span {
+    padding: 8px;
+    font-size: 48px;
+}
+
+.player {
+    display: block;
+}
+
+.player:first-child {
+    margin-bottom: 24px;
+}
+
+.caption {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.card {
+    display: inline-block;
+    width: 140px;
+    padding: 8px 16px;
+    background: lightgray;
+    text-align: center;
+}
+
+.suit {
+    font-size: larger;
+}
+
+.red {
+    color: red;
+}
+
