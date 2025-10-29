@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 46px;
+    padding-left: 100px;
+    background: url("https://images.unsplash.com/photo-1502691876148-a84978e59af8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat 0 0/cover
+}
+
+h1, p {
+    padding: 20px;
+}
+
+h1, p, .union {
+    background-color: rgba(247, 240, 237, 0.9)
+}
+
+
+h1, .union {
+    margin-bottom: 46px;
+}
+
+h1, .union, .conclusion {
+    width: 60%;
+}
+
+.union > p {
+    width: 100%;
+}
+
+.intro {
+    padding-bottom: 0;
+}
