@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2-3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 10px;
+            background-color: darkslategray;
+        }
+
+        .cards {
+            padding: 30px;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 16px;
+            border-radius: 10px;
+            background-color: lightgray;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            background-color: #fff;
+            transform: scale(1.1);
+        }
+
+        .card__caption {
+            margin-bottom: 16px;
+        }
+
+        .card__content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card__item {
+
+        }
+
+        .card__subitem {
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+<div class="cards">
+    <div class="card">
+        <h3 class="card__caption">Січень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 8 годин</span>
+            <span class="card__item">Температура: -5°C</span>
+            <span class="card__item">Температурний рекорд: -25°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Лютий</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 9 годин</span>
+            <span class="card__item">Температура: -3°C</span>
+            <span class="card__item">Температурний рекорд: -20°C</span>
+            <span class="card__item">Кількість днів: 28 (29 <span class="card__subitem">у високосний рік</span>)</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Березень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 11 годин</span>
+            <span class="card__item">Температура: 2°C</span>
+            <span class="card__item">Температурний рекорд: -10°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Квітень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 13 годин</span>
+            <span class="card__item">Температура: 10°C</span>
+            <span class="card__item">Температурний рекорд: -5°C</span>
+            <span class="card__item">Кількість днів: 30</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Травень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 15 годин</span>
+            <span class="card__item">Температура: 15°C</span>
+            <span class="card__item">Температурний рекорд: 30°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Червень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 17 годин</span>
+            <span class="card__item">Температура: 20°C</span>
+            <span class="card__item">Температурний рекорд: 35°C</span>
+            <span class="card__item">Кількість днів: 30</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Липень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 16 годин</span>
+            <span class="card__item">Температура: 25°C</span>
+            <span class="card__item">Температурний рекорд: 40°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Серпень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 14 годин</span>
+            <span class="card__item">Температура: 24°C</span>
+            <span class="card__item">Температурний рекорд: 38°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Вересень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 12 годин</span>
+            <span class="card__item">Температура: 18°C</span>
+            <span class="card__item">Температурний рекорд: 30°C</span>
+            <span class="card__item">Кількість днів: 30</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Жовтень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 10 годин</span>
+            <span class="card__item">Температура: 10°C</span>
+            <span class="card__item">Температурний рекорд: 25°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Листопад</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 8 годин</span>
+            <span class="card__item">Температура: 5°C</span>
+            <span class="card__item">Температурний рекорд: 15°C</span>
+            <span class="card__item">Кількість днів: 30</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card__caption">Грудень</h3>
+        <div class="card__content">
+            <span class="card__item">Довжина дня: 7 годин</span>
+            <span class="card__item">Температура: -2°C</span>
+            <span class="card__item">Температурний рекорд: -20°C</span>
+            <span class="card__item">Кількість днів: 31</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
