@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 100px 60px;
+    background-color: darksalmon;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.25s;
+}
+
+.box:hover {
+    border-radius: 50%;
+    background-color: grey;
+    transition: 0.5s;
+}

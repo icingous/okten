@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: darkslategray;
+}
+
+.cards {
+    padding: 30px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.card__caption {
+    margin-bottom: 16px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__item {
+
+}
+
+.card__subitem {
+    font-size: smaller;
+}
