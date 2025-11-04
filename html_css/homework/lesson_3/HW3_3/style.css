@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: currentColor;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main > section {
+    height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+main > section > h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+main > section > p {
+    max-width: 1500px;
+    font-size: 20px;
+}
+
+main > section:nth-child(1) {
+    background-color: lightcoral;
+}
+
+main > section:nth-child(2) {
+    background-color: cyan;
+}
+
+main > section:nth-child(3) {
+    background-color: darkseagreen;
+}
+
+a {
+    font-size: xxx-large;
+}
