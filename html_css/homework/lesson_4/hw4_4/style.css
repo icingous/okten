@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    text-align: center;
+    align-content: center;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+}
+
+header, footer {
+    height: 20vh;
+    background: #D9D9D9;
+}
+
+aside {
+    width: 27vw;
+    background: #C0BDBD;
+}
+
+main {
+    width: 73vw;
+}
+
+aside, main {
+    color: #fff;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+main > section {
+    height: 20vh;
+    color: #FFF;
+}
+
+aside > div {
+    height: 50%;
+}
+
+.content-1 {
+    background: #776969;
+}
+
+.content-2 {
+    background: #643030;
+}
+
+.content-3 {
+    background: #441818;
+}
+
+.spam-1 {
+    background: #937575;
+}
+
+.spam-2 {
+    background: #644C4C;
+}
