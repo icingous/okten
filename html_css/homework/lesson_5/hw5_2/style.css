@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+:root {
+    --dark-color: #1E1E1E;
+    --light-color: #E9E3DC;
+    --olive-color: #D1EF53;
+    --active-bg-color: #B3A0CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark-color);
+    font-family: 'Bowlby One', 'sans-serif';
+    text-align: center;
+}
+
+h1, h2 {
+    line-height: 0.89;
+}
+
+.container {
+    width: 1440px;
+    padding: 36px 50px;
+    margin: auto;
+}
+
+/************************** HEADER ***************************/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 74px;
+}
+
+nav {
+    font-size: 18px;
+}
+
+nav + button {
+    padding: 22px 26px;
+    border: none;
+    color: var(--dark-color);
+    background-color: var(--active-bg-color);
+    font-family: inherit;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-color);
+}
+
+/*********************** PROMO ***********************/
+.promo {
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 107px;
+    color: var(--light-color);
+}
+
+.promo img {
+    display: block;
+    margin: 32px auto;
+}
+
+/*********************** ABOUT **********************/
+
+.about {
+    display: flex;
+    margin-bottom: 64px;
+    padding: 98px 108px 85px;
+    border-radius: 30px;
+    background: var(--olive-color);
+    color: var(--dark-color);
+    text-align: left;
+}
+
+.about h2 {
+    width: 532px;
+    margin-right: 28px;
+    color: var(--dark-color);
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.about p {
+    width: 520px;
+    margin-bottom: 34px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+.about button {
+    padding: 22px 35px;
+    border: 4px solid var(--dark-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 0.97;
+    text-transform: uppercase;
+    box-shadow: 8px 8px 0 0 var(--dark-color);
+}
+
+/********************** MENU ***********************/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.menu img {
+    width: 650px;
+    height: 753px;
+}
+
+/****************** ORDER ONLINE ******************/
+
+.order-online {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-online h2, .order-online img {
+    margin: 0 auto;
+}
+
+.order-online h2 {
+    width: 895px;
+    margin-bottom: 32px;
+    color: var(--light-color);
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.order-online img {
+    order: -1;
+    display: block;
+    margin-bottom: 64px;
+}
+
+.order-online button {
+    padding: 22px 32px;
+    background-color: var(--olive-color);
+    color: var(--dark-color);
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 0.97;
+    text-transform: uppercase;
+}
