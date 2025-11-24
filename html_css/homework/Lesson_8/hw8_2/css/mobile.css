@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    .items {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .image-wrapper {
+        width: 128px;
+        height: 128px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

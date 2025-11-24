@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .designs {
+        gap: 40px;
+    }
+    .design {
+        width: 100%;
+    }
+
+    .img-wrapper {
+        height: calc((100vw - 16px) * 3 / 4);
+    }
+}
