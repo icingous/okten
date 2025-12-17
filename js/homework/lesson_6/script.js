@@ -279,3 +279,43 @@ const clubs = cards.filter(
 );
 
 console.log(spadeAce, sixes, reds, diamonds, clubs);
+
+// #EP5I1UUzAX
+// Взяти описану колоду карт, та за допомогою reduce “упакувати” всі карти по “мастях” в об’єкт
+// Приклад моделі кінцевого об’єкту
+// {
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// }
+
+const cardsObj = cards.reduce(
+  (a, c) => {
+    switch (c.cardSuit) {
+      case 'spade':
+        a.spades.push(c);
+        break;
+      case 'diamond':
+        a.diamonds.push(c);
+        break;
+      case 'heart':
+        a.hearts.push(c);
+        break;
+      case 'clubs':
+        a.clubs.push(c);
+        break;
+      default:
+    }
+
+    return a;
+  },
+  {
+    spades: [],
+    diamonds: [],
+    hearts: [],
+    clubs: [],
+  }
+);
+
+console.log(cardsObj);
