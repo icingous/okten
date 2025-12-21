@@ -124,7 +124,9 @@ Car.prototype.info = function () {
 };
 
 Car.prototype.increaseMaxSpeed = function (increment) {
-  if (increment > 0) this.maxSpeed += increment;
+  if (increment > 0) {
+    this.maxSpeed += increment;
+  }
 };
 
 Car.prototype.changeYear = function (year) {
@@ -226,10 +228,10 @@ class Prince {
   }
 }
 
-const cinderellas = Array(10);
 const prince = new Prince('Prince', 30, {
   size: 27 + Math.floor(Math.random() * 10),
 });
+const cinderellas = Array(10);
 
 for (let i = 0; i < 10; ++i) {
   cinderellas[i] = new Cinderella(`Cinderella${i + 1}`, 18 + i, 27 + i);
