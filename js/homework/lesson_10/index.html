@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW10</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="text">text</div>
+    <button>Hide text</button>
+    <hr />
+    <label for="age">Your age</label>
+    <input type="number" id="age" placeholder="your age" />
+    <button>Check age</button>
+    <hr />
+    <form action="#" name="form1">
+      <div class="form-input">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="your name" />
+      </div>
+      <div class="form-input">
+        <label for="surname">Your surname</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="your surname"
+        />
+      </div>
+      <div class="form-input">
+        <label for="age">Your age</label>
+        <input type="number" id="age" name="age" placeholder="your age" />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="form-data" id="form_data"></div>
+    <hr />
+    <div id="load_counter"></div>
+    <hr />
+    <input type="number" id="kg_weight" placeholder="kg" />
+    <div id="pound_weight"></div>
+    <hr />
+    <form id="table_form">
+      <input type="number" name="rows" placeholder="кількість рядків" />
+      <input type="number" name="cols" placeholder="кількість стовпчиків" />
+      <input type="text" name="content" placeholder="вміст комірок" />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <table id="table" border="0"></table>
+    <hr />
+    <div id="page">
+      <div class="page__items"></div>
+      <button>Prev page</button>
+      <button>Next page</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

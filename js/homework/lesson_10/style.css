@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-spacing: 0;
+  margin: 10px 0;
+}
+
+td {
+  border: 1px solid lightgray;
+}
