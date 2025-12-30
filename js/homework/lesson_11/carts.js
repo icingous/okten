@@ -89,6 +89,7 @@ function createCart(cart) {
   card.appendChild(caption);
 
   const productList = document.createElement('ul');
+
   productList.className = 'cart__products';
 
   for (const product of products) {
@@ -108,10 +109,12 @@ function createCart(cart) {
     totalQuantity,
   }).forEach(([key, value]) => {
     const dt = document.createElement('dt');
+
     dt.innerText = key;
     propList.appendChild(dt);
 
     const dd = document.createElement('dd');
+
     dd.innerText = value;
     propList.appendChild(dd);
   });
