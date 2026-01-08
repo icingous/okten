@@ -1,36 +1,37 @@
+"use strict";
 {
-    document.addEventListener('DOMContentLoaded', function (e) {
+    document.addEventListener('DOMContentLoaded', (e) => {
         checkPrice();
     });
     function getSessions() {
-        var sessions = [];
-        var reloads = localStorage.getItem('priceReloads');
+        let sessions = [];
+        const reloads = localStorage.getItem('priceReloads');
         if (reloads) {
             sessions = JSON.parse(reloads);
         }
         return sessions;
     }
     function setPrice(sessions) {
-        var priceEl = document.getElementById('price');
-        var initialPrice = parseInt(priceEl.innerText);
-        if (!(sessions === null || sessions === void 0 ? void 0 : sessions.length)) {
+        const priceEl = document.getElementById('price');
+        const initialPrice = parseInt(priceEl.innerText);
+        if (!sessions?.length) {
             localStorage.setItem('price', String(initialPrice));
             return;
         }
-        var dd = Date.now() - sessions[sessions.length - 1];
-        var price = initialPrice;
-        var storedPrice = localStorage.getItem('price');
+        const dd = Date.now() - sessions[sessions.length - 1];
+        let price = initialPrice;
+        const storedPrice = localStorage.getItem('price');
         if (storedPrice) {
             price = +storedPrice;
         }
         if (Math.floor(dd / 1000) > 10) {
             price += 10;
         }
-        priceEl.innerText = "".concat(price, "\u0433\u0440\u043D");
+        priceEl.innerText = `${price}грн`;
         localStorage.setItem('price', String(price));
     }
     function checkPrice() {
-        var sessions = getSessions() || [];
+        let sessions = getSessions() || [];
         setPrice(sessions);
         sessions.push(Date.now());
         localStorage.setItem('priceReloads', JSON.stringify(sessions));

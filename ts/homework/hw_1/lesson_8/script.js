@@ -39,9 +39,6 @@
         return copy;
     };
     class Prince {
-        name;
-        age;
-        slipper;
         constructor(name, age, slipper) {
             this.name = name;
             this.age = age;
@@ -64,9 +61,6 @@
     const copies = testItems.map((item) => copyObject(item));
     copies.forEach((item, i) => console.log({ item, isEqualToOriginal: item === testItems[i] }));
     class Cinderella {
-        name;
-        age;
-        footSize;
         constructor(name, age, footSize) {
             this.name = name;
             this.age = age;

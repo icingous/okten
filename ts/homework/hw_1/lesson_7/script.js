@@ -4,11 +4,6 @@
 // створити пустий масив, наповнити його 10 об’єктами new User(….)
 {
     class User {
-        id;
-        name;
-        surname;
-        email;
-        phone;
         constructor(id, name, surname, email, phone) {
             this.id = id;
             this.name = name;
@@ -51,7 +46,6 @@
         return Array.from(order).sort((a, b) => (a > b ? 1 : a < b ? -1 : 0));
     };
     class Client extends User {
-        order;
         constructor(id, name, surname, email, phone, order) {
             super(id, name, surname, email, phone);
             this.order = order;
@@ -68,18 +62,13 @@
     const sortedClients = Array.from(clients).sort((a, b) => a.order.length - b.order.length);
     console.log(sortedClients);
     class Car {
-        model;
-        manufacturer;
-        productionYear;
-        maxSpeed;
-        capacity;
-        driver = null;
         constructor(model, manufacturer, productionYear, maxSpeed, capacity) {
             this.model = model;
             this.manufacturer = manufacturer;
             this.productionYear = productionYear;
             this.maxSpeed = maxSpeed;
             this.capacity = capacity;
+            this.driver = null;
         }
         drive() {
             console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
@@ -121,12 +110,6 @@
     //     — changeYear (newValue) – змінює рік випуску на значення newValue
     //     — addDriver (driver) – приймає об’єкт, який “водій” з довільним набором полів, і додає його в поточний об’єкт car
     class Car2 {
-        model;
-        manufacturer;
-        productionYear;
-        maxSpeed;
-        capacity;
-        driver;
         constructor(model, manufacturer, productionYear, maxSpeed, capacity) {
             this.model = model;
             this.manufacturer = manufacturer;
@@ -171,9 +154,6 @@
     // За допомоги циклу знайти, яка попелюшка повинна бути з принцом.
     // Додатково, знайти необхідну попелюшку за допомогою функції масиву find та відповідного колбеку
     class Cinderella {
-        name;
-        age;
-        footSize;
         constructor(name, age, footSize) {
             this.name = name;
             this.age = age;
@@ -181,9 +161,6 @@
         }
     }
     class Prince {
-        name;
-        age;
-        slipper;
         constructor(name, age, slipper) {
             this.name = name;
             this.age = age;
