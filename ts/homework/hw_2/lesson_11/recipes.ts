@@ -48,7 +48,7 @@ function createRecipe(recipe: Recipe) {
     mealType,
   } = recipe;
   const card = document.createElement('div');
-  // console.log(ingredients);
+
   card.className = 'recipe';
   card.dataset.id = String(id);
 
